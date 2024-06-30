@@ -1,0 +1,284 @@
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: Helvetica, sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.background {
+  background-image: url(BG_image.jpg);
+  height: 650px;
+  width: 100%;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.box {
+  height: 650px;
+  width: 100%;
+}
+main > nav {
+  height: 100px;
+  padding: 30px;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.separation-line {
+  background-color: rgb(35 35 35);
+  height: 8px;
+}
+nav div select {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.686);
+  font-size: large;
+  border: 2px solid rgba(255, 255, 255, 0.749);
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+button {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  font-weight: bolder;
+  border: none;
+}
+nav div button {
+  padding: 8px 20px;
+  font-size: bolder;
+}
+main > section {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-text > div:first-child {
+  font-size: 48px;
+  font-weight: bolder;
+  padding: 20px 0;
+}
+.main-text > div:nth-child(2),
+.main-text > div:nth-child(3) {
+  font-size: 18px;
+  padding: 15px 0;
+}
+.email {
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+.email > span > input {
+  background-color: rgba(0, 0, 0, 0.395);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  height: 50px;
+  width: 350px;
+  padding-left: 8px;
+}
+.email > span > button {
+  height: 50px;
+  width: 180px;
+  font-size: larger;
+  padding: auto 10px;
+}
+.box1 {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  padding: 90px 0;
+}
+.box1 > div:nth-child(2) {
+  position: relative;
+}
+.video1 {
+  position: absolute;
+  right: 82px;
+  top: 96px;
+  z-index: -1;
+}
+.TV {
+  position: relative;
+  right: 0;
+  top: 0;
+}
+.video2 {
+  position: absolute;
+  right: 150px;
+  top: 64px;
+  z-index: -1;
+  zoom: 0.85;
+}
+.faq {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  padding: 5vw;
+  gap: 10px;
+}
+.faq h1 {
+  font-size: min(4vw, 70px);
+  padding: 20px;
+}
+.faq > div > button {
+  font-size: 18px;
+  background-color: rgb(161 158 158 / 26%);
+  height: 60px;
+  width: min(1200px, 90vw);
+  border: none;
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq > h3 {
+  padding: 50px 0 5px 0;
+}
+.faq > div > span > input {
+  background-color: rgba(255, 253, 253, 0.077);
+}
+.invert {
+  filter: invert(100%);
+}
+.footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 12px;
+}
+.footer {
+  width: 80vw;
+  font-size: small;
+  padding: 40px 0;
+  justify-content: center;
+  margin: auto;
+}
+.footer select {
+  background-color: rgba(255, 255, 255, 0.068);
+  width: min(70%, 90px);
+}
+@media screen and (max-width: 720px) {
+  .email {
+    flex-direction: column;
+  }
+  .footer > div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-text > div:first-child {
+    font-size: 28px;
+    padding: 20px 0;
+  }
+  .main-text > div:nth-child(2),
+  .main-text > div:nth-child(3) {
+    font-size: 15px;
+    padding: 15px 0;
+  }
+  nav {
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    width: 100vw;
+    margin: 0 0;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+  }
+  .logo {
+    width: 25vw;
+  }
+  nav div select {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.686);
+    font-size: small;
+    border: 1px solid rgba(255, 255, 255, 0.749);
+    padding: 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .email > span > input {
+    height: 50px;
+    width: 300px;
+    padding-left: 8px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .box1 {
+    flex-direction: column;
+  }
+  button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .img-download {
+    position: relative;
+  }
+  .download {
+    position: absolute;
+    left: 90px;
+    top: 305px;
+    border: 2px solid #6f6f6f;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .image1 {
+    width: 300px;
+  }
+  .video1 {
+    width: 73%;
+    right: 41px;
+    top: 48px;
+  }
+  .image3 {
+    width: 380px;
+  }
+  .image4 {
+    width: 90%;
+    margin: auto;
+  }
+  .image2 {
+    width: 350px;
+  }
+  .download {
+    width: 218px;
+    left: 62px;
+    top: 181px;
+  }
+  .video2 {
+    width: 280px;
+    right: 86px;
+    top: 37px;
+  }
+}
